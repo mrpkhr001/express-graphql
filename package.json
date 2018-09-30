@@ -1,0 +1,27 @@
+{
+  "name": "egmapp",
+  "version": "1.0.0",
+  "description": "An express node application exposing mongo db data with graphQL APIs ",
+  "main": "index.js",
+  "repository": "git test",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack --watch --colors"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "7",
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "source-map-support": "^0.5.9",
+    "start-server-webpack-plugin": "^2.2.5",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+
+    "express": "^4.16.3"
+  }
+}
