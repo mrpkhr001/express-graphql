@@ -10,10 +10,9 @@ app.listen('3000', function () {
 });
 
 if (module.hot) {
-    console.log('module hot loading is enabled');
     module.hot.accept(['./server'], () => {
-        server.removeListener('request', currentApp)
-        server.on('request', app)
+        server.removeListener('request', currentApp);
+        server.on('request', app);
         currentApp = app
     })
 }

@@ -27,7 +27,7 @@ module.exports = {
                         loader: 'babel-loader',
                         options: {
                             babelrc: false,
-                            presets: [['env', {modules: false}]],
+                            presets: [['env', {modules: false}], 'stage-3'],
                             plugins: ['transform-regenerator', 'transform-runtime']
                         }
                     }
