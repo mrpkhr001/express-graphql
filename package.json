@@ -6,15 +6,20 @@
   "repository": "git test",
   "license": "MIT",
   "scripts": {
-    "start": "webpack --watch --colors"
+    "start": "webpack --watch --colors",
+    "test": "jest a --no-cache --config=jest.config.js --watch",
+    "test:coverage": "jest --no-cache --config=jest.config.json --coverage"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
     "babel-loader": "7",
     "babel-plugin-transform-regenerator": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-3": "^6.24.1",
+    "jest": "^23.6.0",
+    "jest-html-reporter": "^2.4.2",
     "source-map-support": "^0.5.9",
     "start-server-webpack-plugin": "^2.2.5",
     "webpack": "^4.20.2",

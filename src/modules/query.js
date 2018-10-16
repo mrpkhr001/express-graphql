@@ -1,31 +1,5 @@
-let counter = 1;
+import controller from "./crud.controller";
 
-const controller  = {
-
-    findByParam(model, id) {
-        return {...id};
-    },
-
-    findOne(data){
-        return data;
-    },
-
-    findAll(model){
-        return [];
-    },
-
-    createOne (model, body){
-        return {id : counter++, ...body};
-    },
-
-    updateOne(model, body){
-        return {...body};
-    },
-
-    deleteOne(model, id){
-        return id;
-    }
-};
 
 const findAll = (model) => (req, res, next) => {
     return res.json(controller.findAll(model));
@@ -51,7 +25,6 @@ const findById = (model) => (req, res, next) => {
     req.fromById  = controller.findByParam(model, req.params);
     return next();
 }
-
 
 
 export const extendController = (model, overrides) => {
